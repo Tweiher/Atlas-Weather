@@ -1,0 +1,17 @@
+{
+  "name": "Atlas Class Ass. Dev Container",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "esbenp.prettier-vscode",
+        "ritwickdey.LiveServer"
+      ]
+    }
+  },
+
+  "forwardPorts": [5500],
+
+  "postCreateCommand": "npm install || echo 'No package.json yet'"
+}

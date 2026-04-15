@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Atlas Weather</title>
+<link rel="icon" type="image/png" href="images/favicon.png">
+
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+
+<p>Welcome to the Atlas Weather App!</p>
+ <div id="app">
+
+    <header class="header">
+
+      <div class="logo-wrap">
+        <img src="images/CloudsBanner.png" alt="Clouds Banner" class="logo">
+        <h1>Atlas Weather</h1>
+      </div>
+
+      <button id="themeToggle">Theme</button>
+
+    </header>
+
+    <div class="controls">
+      <input id="searchInput" placeholder="Search Weather" />
+      <button id="searchBtn">Search</button>
+     
+    </div>
+
+    <main id="content"></main>
+
+    <div class="loadMoreWrap">
+      <button id="loadMoreBtn">Load More</button>
+    </div>
+
+    <div id="loader" class="hidden">Loading...</div>
+
+    <footer class="footer">
+      <p>Built with data from Weather-API • © 2026 Weather-API</p>
+    </footer>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
